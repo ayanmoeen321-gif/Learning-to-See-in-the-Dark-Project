@@ -25,9 +25,6 @@ A U-Net fully-convolutional network takes raw short-exposure Sony images and pro
 ├── README.md                   # This file
 ├── report/
 │   └── SID_Project_Report.pdf  # Final project report
-├── checkpoints/
-│   ├── best_model.pth          # Best model weights (lowest val loss)
-│   └── latest_checkpoint.pth  # Full training state (model + optimizer)
 ├── results/
 │   ├── loss_curve.png          # Training and validation loss across epochs
 │   └── visual_results.png      # Input vs Output vs Ground Truth comparisons
@@ -35,6 +32,22 @@ A U-Net fully-convolutional network takes raw short-exposure Sony images and pro
     ├── Sony_train_list.txt     # Training pairs annotation file
     ├── Sony_val_list.txt       # Validation pairs annotation file
     └── Sony_test_list.txt      # Test pairs annotation file
+```
+
+---
+
+## Trained Model Weights
+
+Due to GitHub's 25MB file size limit, model weights are hosted on Kaggle:
+
+| File | Size | Link |
+|------|------|------|
+| `best_model.pth` | 31 MB | [Download from Kaggle](https://www.kaggle.com/code/ayanmoeen/dlp-project4/output?scriptVersionId=317861281) |
+| `latest_checkpoint.pth` | 93 MB | [Download from Kaggle](https://www.kaggle.com/code/ayanmoeen/dlp-project4/output?scriptVersionId=317861281) |
+
+To download via Kaggle CLI:
+```bash
+kaggle kernels output ayanmoeen/dlp-project4 -p ./checkpoints
 ```
 
 ---
